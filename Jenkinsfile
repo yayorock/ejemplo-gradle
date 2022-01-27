@@ -42,7 +42,7 @@ pipeline {
         stage("Paso 4: Subir Nexus"){
             steps{
                 script {
-                    nexusPublisher nexusInstanceId: 'nexus3',
+                    nexusPublisher nexusInstanceId: 'nexus',
                     nexusRepositoryId: 'devops-usach-nexus',
                     packages: [
                         [$class: 'MavenPackage',
