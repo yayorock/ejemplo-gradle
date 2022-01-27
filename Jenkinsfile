@@ -7,8 +7,8 @@ def jsonParse(def json) {
 pipeline {
     agent any
     environment {
-        NEXUS_USER         = credentials('nexus-user')
-        NEXUS_PASSWORD     = credentials('nexus-pass')
+        NEXUS_USER         = credentials('nexus_user')
+        NEXUS_PASSWORD     = credentials('nexus_pass')
     }
     stages {
         stage("Paso 1: Build && Test"){
