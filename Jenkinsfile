@@ -13,7 +13,7 @@ pipeline {
     parameters {
         choice(
             name: 'compileTool',
-            choice: ['Maven', 'Gradle'],
+            choices: ['Maven', 'Gradle'],
             description : 'Seleccione herramienta de compilacion'
         )
     }
