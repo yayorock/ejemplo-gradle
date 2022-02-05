@@ -1,4 +1,4 @@
 library('pipeline')
-branch="${env.BRANCH_NAME}"
+branch="${BRANCH_NAME}"
 println "$branch"
 ejecucion.call()
