@@ -1,2 +1,3 @@
 library('pipeline')
-ejecucion.call("${env.BRANCH_NAME}")
+branch_name = "${env.BRANCH_NAME}"
+ejecucion.call(branch_name)
