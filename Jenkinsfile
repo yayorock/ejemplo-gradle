@@ -1,4 +1,3 @@
 library('pipeline')
-branch="${BRANCH_NAME}"
-println "$branch"
+echo "${env.BRANCH_NAME}"
 ejecucion.call()
