@@ -33,4 +33,4 @@ docker run -it --rm -p 9010:8081  -v ${pwd}:/code --workdir /code gradlew.bat bo
 docker run -it --rm -v $(pwd):/code --workdir /code gradle clean build
 ### Run Jar
 docker run -it --rm -p 8010:8081  -v $(pwd):/code --workdir /code gradle bootRun
-```   
+```
